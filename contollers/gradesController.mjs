@@ -1,4 +1,3 @@
-
 import db from'../db/conn.mjs';
 
 async function getAvg(req, res) {
