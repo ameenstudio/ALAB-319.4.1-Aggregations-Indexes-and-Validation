@@ -22,6 +22,19 @@ async function getAvg(req, res) {
     .toArray();
 
   res.json(result);
-}
+// }
+// async function getStats(req, res) {
+//   try {
+//     // Specify Collection
+//     let collection = await db.collection('grades');
+
+    
+//     let result = await collection
+//       .aggregate(
+//         [
+//           {
+//             $project: {
+//               learner_id: 1,
+//               weightedAverage: { $avg: '$scores.score' }, //  the average score
 
 export default { getAvg };
